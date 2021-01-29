@@ -39,7 +39,7 @@ error_reporting(0);
     <link href="boot/index.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+  <header>
   <div class="collapse bg-dark" id="navbarHeader">
     <div class="container">
       <div class="row">
@@ -162,8 +162,8 @@ error_reporting(0);
             <td><?php echo $nomor++; ?></td>
             <td><?php echo $d['nama']; ?></td>
             <td><?php echo $d['jenis']; ?></td>
-            <td><textarea readonly="readonly"><?php echo $d['awal']; ?></textarea></td>
-            <td><textarea readonly="readonly"><?php echo $d['akhir']; ?></textarea></td>
+            <td><?php echo nl2br($d['awal']); ?></td>
+            <td><?php echo nl2br($d['akhir']); ?></td>
             <td>
                   <a href="<?php echo $d['web'] ?>"><img src="gambar/world-wide-web.svg" style=" box-sizing: border-box; width: 40px; margin: px;"></a>
                   <a href="<?php echo $d['ig'] ?>"><img src="gambar/instagram.svg" style=" box-sizing: border-box; width: 40px; margin: 2px;"></a>
